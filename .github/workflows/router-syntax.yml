@@ -1,0 +1,49 @@
+name: Router Shell Syntax
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'router/**'
+      - '.github/workflows/router-syntax.yml'
+
+  pull_request:
+    paths:
+      - 'router/**'
+      - '.github/workflows/router-syntax.yml'
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  shell-syntax:
+    name: Validate router shell scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify shell syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          count=0
+
+          while IFS= read -r -d '' script; do
+            echo "Checking: $script"
+            sh -n "$script"
+            count=$((count + 1))
+          done < <(find router -type f -name '*.sh' -print0)
+
+          if (( count == 0 )); then
+            echo "::error::No router shell scripts found"
+            exit 1
+          fi
+
+          echo "PASS: $count router shell scripts validated"
