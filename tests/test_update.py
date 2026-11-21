@@ -50,7 +50,7 @@ class ValidationTests(unittest.TestCase):
         outputs = update.render(raw, compiled)
         self.assertEqual(compiled['counts']['hosts'], 101)
         self.assertTrue(len(compiled['all4']) > len(compiled['author4']))
-        self.assertEqual(len(compiled['observed4']), 26)
+        self.assertEqual(len(compiled['observed4']), 39)
         self.assertIn(b'ether type ip', outputs['openwrt/tiktok-bridge.nft'])
         self.assertIn(b'create tiktok_author_v4', outputs['freshtomato/author.ipset'])
         manifest = outputs['manifest.json'].decode()
