@@ -1,0 +1,47 @@
+name: Sync TikTok blocklists
+
+on:
+  schedule:
+    - cron: '17 3,15 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'sources/**'
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/sync.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tiktok-blocklists-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch M4jx, validate and generate
+        run: python3 scripts/update.py
+      - name: Check files and publish only when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add dist upstream
+          if git diff --cached --quiet; then
+            echo 'No upstream or derived changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: sync validated TikTok blocklists'
+          git push origin HEAD:main

@@ -1,0 +1,1 @@
+# Additional manually reviewed TikTok domains, one per line.

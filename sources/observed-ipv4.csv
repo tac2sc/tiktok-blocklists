@@ -1,0 +1,17 @@
+address,enabled,confidence,evidence,notes
+207.211.213.115,true,sni-confirmed,OpenWrt Pixel4 PCAP,SNI v77e.tiktokcdn.com on CDN77
+79.133.108.62,true,sni-confirmed,OpenWrt Pixel4 PCAP,SNI v58e.tiktokcdn.com on CDN77
+2.23.97.89,true,sni-confirmed,OpenWrt Pixel4 PCAP,SNI search16-normal-c-alisg.tiktokv.com
+207.211.213.121,true,traffic-observed,OpenWrt Pixel4 PCAP,Large video transfers; shared CDN77 address
+207.211.213.70,true,traffic-observed,OpenWrt Pixel4 PCAP,Large video transfers; shared CDN77 address
+207.211.213.113,true,traffic-observed,OpenWrt Pixel4 PCAP,Large video transfers; shared CDN77 address
+207.211.213.111,true,traffic-observed,OpenWrt Pixel4 PCAP,Video transfers; shared CDN77 address
+207.211.213.123,true,traffic-observed,OpenWrt Pixel4 PCAP,Video transfers; shared CDN77 address
+88.221.92.172,true,previously-deployed,FreshTomato observed set,Previously configured; per-IP SNI not independently verified
+23.201.43.231,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+104.83.4.41,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+23.219.79.223,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+23.201.43.203,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+104.83.4.51,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+23.219.79.213,true,previously-deployed,FreshTomato observed set,Previously configured; shared Akamai possible
+2.23.97.113,true,previously-deployed,FreshTomato observed set,Previously configured; per-IP SNI not independently verified

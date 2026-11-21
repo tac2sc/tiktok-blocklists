@@ -1,0 +1,2 @@
+# One public IPv4 or CIDR per line. Exclusions are subtracted from all categories.
+# Example (disabled): 203.0.113.100/32
