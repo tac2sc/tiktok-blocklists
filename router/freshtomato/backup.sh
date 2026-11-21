@@ -1,5 +1,5 @@
 #!/bin/sh
-# FreshTomato configuration and TikTok firewall backup, version 1.1
+# FreshTomato configuration and TikTok firewall backup, version 1.2
 # Retain five verified, root-only archives in /jffs/tiktok-block/backups.
 set -eu
 umask 077
@@ -16,7 +16,8 @@ nvram save "$TMP/router.cfg" || { echo 'ERROR: nvram backup failed'; exit 1; }
 iptables-save > "$TMP/iptables.rules" || exit 1
 ipset save > "$TMP/ipsets.save" || exit 1
 cp "$BASE/firewall.sh" "$TMP/firewall.sh" || exit 1
-for NAME in tiktok_v4 tiktok_author_v4 tiktok_observed_v4; do
+[ ! -f "$BASE/update.sh" ] || cp "$BASE/update.sh" "$TMP/update.sh" || exit 1
+for NAME in tiktok_v4 tiktok_author_v4 tiktok_observed_v4 tiktok_cdn77_v4; do
     [ -s "$BASE/$NAME.save" ] || { echo "ERROR: missing $NAME.save"; exit 1; }
     cp "$BASE/$NAME.save" "$TMP/$NAME.save" || exit 1
 done
