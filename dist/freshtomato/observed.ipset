@@ -1,0 +1,17 @@
+create tiktok_observed_v4 hash:net family inet
+add tiktok_observed_v4 2.23.97.89/32
+add tiktok_observed_v4 2.23.97.113/32
+add tiktok_observed_v4 23.201.43.203/32
+add tiktok_observed_v4 23.201.43.231/32
+add tiktok_observed_v4 23.219.79.213/32
+add tiktok_observed_v4 23.219.79.223/32
+add tiktok_observed_v4 79.133.108.62/32
+add tiktok_observed_v4 88.221.92.172/32
+add tiktok_observed_v4 104.83.4.41/32
+add tiktok_observed_v4 104.83.4.51/32
+add tiktok_observed_v4 207.211.213.70/32
+add tiktok_observed_v4 207.211.213.111/32
+add tiktok_observed_v4 207.211.213.113/32
+add tiktok_observed_v4 207.211.213.115/32
+add tiktok_observed_v4 207.211.213.121/32
+add tiktok_observed_v4 207.211.213.123/32

@@ -1,0 +1,2 @@
+create tiktok_manual_v4 hash:net family inet
+add tiktok_manual_v4 101.45.16.0/24

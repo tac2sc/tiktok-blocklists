@@ -1,0 +1,38 @@
+{
+  "output_counts": {
+    "all_ipv4_cidrs": 50,
+    "author_ipv4_cidrs": 33,
+    "domains": 1846,
+    "ipv6_cidrs": 2,
+    "manual_ipv4_cidrs": 1,
+    "observed_ipv4_cidrs": 16
+  },
+  "schema": 1,
+  "sha256": {
+    "all-ipv4.txt": "66ed39fc60c5ebc39a54a77e7af84d3a7991c3de5b7f9e8b0a67b2ac8a7fec7d",
+    "asns.txt": "473ec1697c9af2503fd0f5d51d8817005fcd8f6a7bfd6a538021b966f790d3ca",
+    "author-ipv4.txt": "8cd1b5e7dfc7e9f0b06056330cd035d744bf3ccd0540d81ddaf49baa4b64cf2e",
+    "domains.txt": "727df817a664c74a8603086c32df6c1813f5e1d28164e6272ced3bfb2e5c1080",
+    "freshtomato/author.ipset": "fbeb03423eca6ccb0cd7cbfc54b0381248e861357b791b7d5771f3a457da050a",
+    "freshtomato/manual.ipset": "fb44a09fd36de7bd047063fa49fc9bee03deed3161c851ba33bc5e3e7bbb8486",
+    "freshtomato/observed.ipset": "17f2f537f73178af4ed853906b54a45a52653194bc3717e5afadcdaf59bc8b9f",
+    "hosts.txt": "1bc487f2693f60a4772cf37247ae2503762f4a5ba0c98d3d6d2b6cd3d5df9a54",
+    "ipv6.txt": "ca858652c77d6ba359aadd389422a789a571b3235f8fb8b893760e1f01dde65c",
+    "manual-ipv4.txt": "e8bcb731085a5b9edcd53b3328746104fdfa058c76fdc2dfdee3fc05ed09b83c",
+    "observed-ipv4.txt": "20631f724f4882e219e1ab6643a0c651e9d7622a0cc69aa4b694c7a9f34aa3b0",
+    "openwrt/tiktok-bridge.nft": "53f784c00e5889efb9814f36dfcb49529874f72f97270806616a4349e5c94fad"
+  },
+  "source": "https://github.com/M4jx/TikTokBlockList",
+  "upstream_counts": {
+    "asns": 2,
+    "hosts": 1846,
+    "ipv4s": 46,
+    "ipv6s": 2
+  },
+  "upstream_sha256": {
+    "asns": "3fdcc48e13dc923f215f2eb2b1cb30216749a6d992e04923c4924c098c675ed2",
+    "hosts": "7d35093883dbd1ee63d27a7997272d85706b725862e2f295d2161e246f2a9124",
+    "ipv4s": "8806b3b994dca047938cf6f045b8b14ed54c3007dacc6767d631683e64f8a063",
+    "ipv6s": "9820b85788327d6fab6c3b90ef6351b2c6980d9f6cc54bb13e58458aa90ab053"
+  }
+}
