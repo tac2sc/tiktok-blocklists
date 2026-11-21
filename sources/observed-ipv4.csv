@@ -25,3 +25,17 @@ address,enabled,confidence,evidence,notes
 199.232.234.73,true,previously-deployed,OpenWrt Net observed4,Existing nftables rule; individual SNI not verified
 207.211.213.87,true,previously-deployed,OpenWrt Net observed4,Existing nftables rule; individual SNI not verified
 207.211.213.117,true,previously-deployed,OpenWrt Net observed4,Existing nftables rule; individual SNI not verified
+104.81.60.169,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI api16-normal-c-alisg.tiktokv.com
+2.21.89.96,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI p16-common-sign.tiktokcdn.com
+23.47.124.162,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI api16-core-c-alisg.tiktokv.com
+104.81.60.178,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI log16-normal-alisg.tiktokv.com
+167.82.86.13,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI api19-core-c-alisg.tiktokv.com
+2.21.173.160,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI sf16-teko.tiktokcdn.com
+104.94.100.169,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI mssdk16-normal-alisg.tiktokv.com
+104.81.60.233,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI mon16-normal-alisg.tiktokv.com
+104.94.100.168,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI bsync-sg.tiktokv.com
+104.81.60.161,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI search16-normal-c-alisg.tiktokv.com
+23.64.12.162,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI webcast16-normal-c-alisg.tiktokv.com
+23.64.12.170,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI tnc0-normal-alisg.tiktokv.com
+104.94.100.170,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI hotapi-sg.tiktokv.com
+2.16.172.160,true,sni-confirmed,OpenWrt R7800 PCAP 2026-11-21,TLS SNI vcs-sg.tiktokv.com
